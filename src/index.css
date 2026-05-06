@@ -1654,7 +1654,8 @@ h1.ht .fl {
   color: #fff;
   text-align: center;
   padding: 45px 20px;
-  border-top: 4px double #C5A880; /* Premium brass double-line */
+  border-top: 4px double #C5A880;
+  /* Premium brass double-line */
 }
 
 .np-social-bar h4 {
@@ -1669,7 +1670,8 @@ h1.ht .fl {
 
 .np-social-bar h4 em {
   font-style: italic;
-  color: #C5A880; /* Brass/Gold highlights */
+  color: #C5A880;
+  /* Brass/Gold highlights */
 }
 
 .slinks {
@@ -2401,13 +2403,33 @@ footer p {
     opacity: 1;
   }
 
-  .nmob.open a:nth-child(1) { transition-delay: 0.1s; }
-  .nmob.open a:nth-child(2) { transition-delay: 0.15s; }
-  .nmob.open a:nth-child(3) { transition-delay: 0.2s; }
-  .nmob.open a:nth-child(4) { transition-delay: 0.25s; }
-  .nmob.open a:nth-child(5) { transition-delay: 0.3s; }
-  .nmob.open a:nth-child(6) { transition-delay: 0.35s; }
-  .nmob.open a:nth-child(7) { transition-delay: 0.4s; }
+  .nmob.open a:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .nmob.open a:nth-child(2) {
+    transition-delay: 0.15s;
+  }
+
+  .nmob.open a:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+
+  .nmob.open a:nth-child(4) {
+    transition-delay: 0.25s;
+  }
+
+  .nmob.open a:nth-child(5) {
+    transition-delay: 0.3s;
+  }
+
+  .nmob.open a:nth-child(6) {
+    transition-delay: 0.35s;
+  }
+
+  .nmob.open a:nth-child(7) {
+    transition-delay: 0.4s;
+  }
 
   .nmob a:hover {
     color: var(--primary) !important;
@@ -2675,7 +2697,7 @@ footer p {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   flex: 1;
   min-height: 160px;
   display: block;
@@ -2869,17 +2891,33 @@ textarea:focus {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
+  #contact {
+    padding: 60px 65px 60px 15px !important; /* Leaves 65px gap on right for floating buttons, keeping left wide */
+  }
+
   .ctg {
     grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
   }
 
   .fcard {
     height: auto !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .cinfo {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
   }
 
   .fcard-banner {
-    flex: none;
-    height: 180px;
+    display: none !important;
   }
 
   .fg {
@@ -2989,7 +3027,7 @@ textarea:focus {
   text-align: center;
   position: relative;
   overflow: hidden;
-  box-shadow: 
+  box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.25),
     inset 0 1px 1px rgba(255, 255, 255, 0.05);
   display: flex;
@@ -3030,7 +3068,7 @@ textarea:focus {
   transform: translateY(-10px);
   background: rgba(255, 255, 255, 0.04);
   border-color: rgba(37, 99, 235, 0.3);
-  box-shadow: 
+  box-shadow:
     0 25px 50px rgba(0, 0, 0, 0.4),
     0 0 30px rgba(37, 99, 235, 0.15),
     inset 0 1px 1px rgba(255, 255, 255, 0.1);
@@ -3103,18 +3141,22 @@ textarea:focus {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
+
   .sbox {
     padding: 30px 15px;
     border-radius: 16px;
   }
+
   .snum {
     font-size: 26px;
     margin-bottom: 6px;
   }
+
   .slbl {
     font-size: 10px;
     letter-spacing: 2px;
   }
+
   .sbox:hover .slbl {
     letter-spacing: 2.5px;
   }
@@ -3126,6 +3168,7 @@ textarea:focus {
     opacity: 0;
     transform: translateY(35px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -3137,6 +3180,7 @@ textarea:focus {
     opacity: 0;
     transform: translateY(-50%) translateX(35px);
   }
+
   to {
     opacity: 1;
     transform: translateY(-50%) translateX(0);
