@@ -128,15 +128,15 @@ const ContactForm = () => {
           )}
 
           {/* Beautiful Decorative Premium Land Plot Banner Image */}
-          <div style={{ marginTop: '25px', borderRadius: '16px', overflow: 'hidden', flex: 1, minHeight: '160px', position: 'relative', border: '1px solid rgba(0,0,0,0.05)' }}>
+          <div className="fcard-banner">
             <img 
               src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1000&q=80" 
               alt="Premium Land Plot in Trichy" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              className="fcard-banner-img"
             />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '18px' }}>
-              <span style={{ color: '#10B981', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '4px' }}>🌱 Prime Residential Plots</span>
-              <strong style={{ color: '#ffffff', fontSize: '15px', fontWeight: 700, letterSpacing: '0.5px' }}>Your Gateway to Elite Living in Trichy</strong>
+            <div className="fcard-banner-overlay">
+              <span className="fcard-banner-tag">🌱 Prime Residential Plots</span>
+              <strong className="fcard-banner-title">Your Gateway to Elite Living in Trichy</strong>
             </div>
           </div>
         </div>
