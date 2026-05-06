@@ -97,9 +97,10 @@ img {
 .locc-photo img,
 .aimg-m img,
 .wfr img,
-.nlogo img {
+.nlogo img,
+.fcard img {
   display: block !important;
-  /* allow hero, location, about, why, and logo images */
+  /* allow hero, location, about, why, logo, and contact form images */
 }
 
 .aimg-m::after,
@@ -2660,6 +2661,9 @@ footer p {
   padding: 30px;
   text-align: left;
   box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* HEADER */
