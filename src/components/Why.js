@@ -20,7 +20,7 @@ const Why = () => {
           <p class="dsc" style={{marginBottom: '30px'}}>I work differently. I am not a broker; I am your personal land consultant in Trichy.</p>
           
           <div className="why-items-grid">
-            <div className="witem">
+            <div className="witem rv">
               <div className="wic">🛡️</div>
               <div>
                 <h4>DTCP Approved Only</h4>
@@ -28,7 +28,7 @@ const Why = () => {
               </div>
             </div>
             
-            <div className="witem">
+            <div className="witem rv">
               <div className="wic">🤝</div>
               <div>
                 <h4>No Hidden Charges</h4>
@@ -36,7 +36,7 @@ const Why = () => {
               </div>
             </div>
             
-            <div className="witem">
+            <div className="witem rv">
               <div className="wic">🚗</div>
               <div>
                 <h4>Personal Site Visits</h4>
@@ -44,7 +44,7 @@ const Why = () => {
               </div>
             </div>
             
-            <div className="witem">
+            <div className="witem rv">
               <div className="wic">📜</div>
               <div>
                 <h4>End-to-End Support</h4>
