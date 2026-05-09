@@ -2,7 +2,7 @@ import React from 'react';
 
 const Areas = () => {
   const areas = [
-    { title: 'JJ College Area', desc: 'Residential & commercial plots near JJ College Road' },
+    { title: 'Dindigul road Trichy', desc: 'Residential & commercial plots near JJ College Road' },
     { title: 'Oolaiyur', desc: 'Affordable residential plots in Oolaiyur' },
     { title: 'Dheeran Nagar', desc: 'Premium DTCP layouts in Dheeran Nagar' },
     { title: 'Nagamangalam', desc: 'Premium plots in serene Nagamangalam area' },

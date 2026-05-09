@@ -3,9 +3,9 @@ import React from 'react';
 const Locations = () => {
   const locs = [
     {
-      name: "JJ College Area",
-      desc: "Premium residential plots with excellent road connectivity and amenities.",
-      img: "/assets/JJ college.jpeg",
+      name: "Dindigul road Trichy",
+      desc: "DTCP Approved Premium Residential Layouts @ Dindigul Main Road, Trichy. Just 2.5 kms From Panjapur Bus Stand.",
+      img: "/assets/Dindigul road.png",
       tag: "TOP SELLING"
     },
     {
