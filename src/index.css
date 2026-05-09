@@ -429,8 +429,7 @@ body {
 .hbody {
   position: relative;
   z-index: 2;
-  padding: 40px 8vw 80px;
-  /* Reduced top padding from 80px to 40px */
+  padding: 40px 8vw 80px 4vw; /* Shifted left by reducing left-padding to 4vw */
   max-width: 900px;
 }
 
@@ -2892,7 +2891,8 @@ textarea:focus {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   #contact {
-    padding: 60px 65px 60px 15px !important; /* Leaves 65px gap on right for floating buttons, keeping left wide */
+    padding: 60px 65px 60px 15px !important;
+    /* Leaves 65px gap on right for floating buttons, keeping left wide */
   }
 
   .ctg {
@@ -3220,4 +3220,163 @@ h1.ht {
 .scue {
   animation: hpFadeInUp 0.95s var(--e) both;
   animation-delay: 0.9s;
+}
+
+/* ===== SITE VIDEO PROMO SECTION ===== */
+#site-video {
+  padding: 35px 0 80px 0;
+  /* No horizontal padding so video can bleed 100% wide! */
+  background: #000000;
+  text-align: center;
+  position: relative;
+}
+
+#site-video .video-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#site-video .tag,
+#site-video .ttl,
+#site-video .sub {
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+#site-video .tag {
+  color: #3b82f6;
+  /* Restored visible vivid blue on dark background */
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#site-video .ttl {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+#site-video .ttl em {
+  font-style: italic;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+#site-video .sub {
+  color: #94a3b8;
+  font-size: 16px;
+  max-width: 750px;
+  margin: 15px auto 50px;
+  line-height: 1.6;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  /* Frameless full bleed! */
+  margin: 40px auto 0;
+  border-radius: 0;
+  /* Frameless - no rounded corners! */
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  background: #000;
+  aspect-ratio: 16/9;
+  border: none;
+  /* Frameless - no border! */
+}
+
+.promo-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block !important;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(37, 99, 235, 0.45));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 30px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.video-overlay:hover {
+  background: linear-gradient(135deg, rgba(9, 13, 22, 0.8), rgba(37, 99, 235, 0.35));
+}
+
+.video-overlay .play-btn {
+  width: 85px;
+  height: 85px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4), 0 0 0 10px rgba(255, 255, 255, 0.15);
+  margin-bottom: 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.video-overlay:hover .play-btn {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.5), 0 0 0 15px rgba(255, 255, 255, 0.25);
+}
+
+.video-overlay h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.video-overlay p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+/* Responsive Overrides for Video Section */
+@media (max-width: 900px) {
+  #site-video {
+    padding: 25px 0 60px 0 !important;
+  }
+
+  #site-video .ttl {
+    font-size: 28px;
+  }
+
+  #site-video .sub {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .video-wrapper {
+    border-radius: 0 !important;
+    max-width: 100%;
+  }
+
+  .video-overlay .play-btn {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+  }
+
+  .video-overlay h3 {
+    font-size: 20px;
+  }
 }

@@ -7,6 +7,7 @@ import TrustStats from './components/TrustStats';
 import ServicesAndTesti from './components/ServicesAndTesti';
 import Why from './components/Why';
 import Locations from './components/Locations';
+import SiteVideo from './components/SiteVideo';
 import NewspaperNews from './components/NewspaperNews';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -65,6 +66,7 @@ function App() {
       <Hero />
       <Areas />
       <Locations />
+      <SiteVideo />
       <About />
       <TrustStats />
       <Why />
