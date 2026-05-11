@@ -212,7 +212,7 @@ body {
 }
 
 .nlogo span {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -349,7 +349,7 @@ body {
 }
 
 .ttl {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: clamp(26px, 3.4vw, 50px);
   font-weight: 700;
   line-height: 1.1
@@ -624,7 +624,7 @@ h1.ht .fl {
 }
 
 .anm {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: var(--g2);
@@ -726,7 +726,7 @@ h1.ht .fl {
 }
 
 .video-wrapper h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -783,7 +783,7 @@ h1.ht .fl {
 }
 
 .abdg .big {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 48px;
   font-weight: 900;
   line-height: 1;
@@ -811,7 +811,7 @@ h1.ht .fl {
 }
 
 .atag .n {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 28px;
   font-weight: 900;
   color: var(--primary);
@@ -960,7 +960,7 @@ h1.ht .fl {
 }
 
 .snum {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: var(--g);
@@ -1415,7 +1415,7 @@ h1.ht .fl {
   font-size: 52px;
   font-weight: 900;
   letter-spacing: 2px;
-  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .np-masthead span {
@@ -1578,7 +1578,7 @@ h1.ht .fl {
   margin-right: 8px;
   margin-top: 4px;
   color: #8b0000;
-  font-family: "Playfair Display", "Georgia", serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .np-hero-foot {
@@ -1659,7 +1659,7 @@ h1.ht .fl {
 }
 
 .np-social-bar h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1781,7 +1781,7 @@ footer {
 }
 
 .ftlg {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 20px;
   font-weight: 900;
   color: #ffffff;
@@ -1972,7 +1972,7 @@ footer p {
 }
 
 .locc h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 24px;
   font-weight: 800;
   color: var(--text-main);
@@ -2092,7 +2092,7 @@ footer p {
   font-weight: 800;
   margin-bottom: 10px;
   color: #0F172A;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .adt {
