@@ -2367,7 +2367,7 @@ footer p {
   }
 
   .fbtns {
-    grid-template-columns: 1fr
+    flex-direction: column
   }
 
   .fg {
@@ -2929,8 +2929,7 @@ textarea:focus {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   #contact {
-    padding: 60px 65px 60px 15px !important;
-    /* Leaves 65px gap on right for floating buttons, keeping left wide */
+    padding: 60px 20px !important;
   }
 
   .ctg {
