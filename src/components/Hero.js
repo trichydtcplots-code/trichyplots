@@ -11,11 +11,13 @@ const Hero = () => {
       <div className="hbody">
         <div className="heye">TRICHY DTCP PLOTS — Saravanan, Trichy</div>
         <h1 className="ht">
-          <span className="fl">TRICHY</span><br />
-          <span className="it">DTCP PLOTS</span><br />
-          <span className="sm">Saravanan, Land Consultant</span>
+          <span className="fl"><span className="an-wrd">TRICHY</span></span><br />
+          <span className="it"><span className="an-wrd">DTCP</span> <span className="an-wrd">PLOTS</span></span><br />
+          <span className="sm"><span className="an-wrd">Saravanan,</span> <span className="an-wrd">Land</span> <span className="an-wrd">Consultant</span></span>
         </h1>
-        <p className="hsub">Looking for the perfect DTCP plot in Trichy? I personally guide you from site visit to registration — no agents, no middlemen, just me.</p>
+        <p className="hsub">
+          <span className="an-wrd">Looking</span> <span className="an-wrd">for</span> <span className="an-wrd">the</span> <span className="an-wrd">perfect</span> <span className="an-wrd">DTCP</span> <span className="an-wrd">plot</span> <span className="an-wrd">in</span> <span className="an-wrd">Trichy?</span> <span className="an-wrd">I</span> <span className="an-wrd">personally</span> <span className="an-wrd">guide</span> <span className="an-wrd">you</span> <span className="an-wrd">from</span> <span className="an-wrd">site</span> <span className="an-wrd">visit</span> <span className="an-wrd">to</span> <span className="an-wrd">registration</span> <span className="an-wrd">—</span> <span className="an-wrd">no</span> <span className="an-wrd">agents,</span> <span className="an-wrd">no</span> <span className="an-wrd">middlemen,</span> <span className="an-wrd">just</span> <span className="an-wrd">me.</span>
+        </p>
         <div className="hbtns">
           <a href="#properties" className="bg">View My Listings</a>
           <a href="#contact" className="bw">Talk to Me</a>

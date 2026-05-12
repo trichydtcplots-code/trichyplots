@@ -212,7 +212,7 @@ body {
 }
 
 .nlogo span {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -349,7 +349,7 @@ body {
 }
 
 .ttl {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: clamp(26px, 3.4vw, 50px);
   font-weight: 700;
   line-height: 1.1
@@ -413,12 +413,12 @@ body {
 
 /* HERO */
 #hero {
-  min-height: 85vh;
+  min-height: 75vh; /* Slashed from 85vh to fulfill request for smaller hero */
   position: relative;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .pbg img {
@@ -452,7 +452,7 @@ body {
 }
 
 h1.ht {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: clamp(32px, 7vw, 90px);
   font-weight: 900;
   line-height: 1;
@@ -514,7 +514,7 @@ h1.ht .fl {
 }
 
 .hstn {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: var(--accent);
@@ -624,7 +624,7 @@ h1.ht .fl {
 }
 
 .anm {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: var(--g2);
@@ -726,7 +726,7 @@ h1.ht .fl {
 }
 
 .video-wrapper h3 {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -783,7 +783,7 @@ h1.ht .fl {
 }
 
 .abdg .big {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 48px;
   font-weight: 900;
   line-height: 1;
@@ -811,7 +811,7 @@ h1.ht .fl {
 }
 
 .atag .n {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 28px;
   font-weight: 900;
   color: var(--primary);
@@ -960,7 +960,7 @@ h1.ht .fl {
 }
 
 .snum {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: var(--g);
@@ -1308,7 +1308,7 @@ h1.ht .fl {
 .np-paper {
   background: radial-gradient(circle, #fbf9f4 0%, #ede6d7 100%);
   color: #1a1a1a;
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: 'Outfit', sans-serif;
   padding: 0;
 }
 
@@ -1415,7 +1415,7 @@ h1.ht .fl {
   font-size: 52px;
   font-weight: 900;
   letter-spacing: 2px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .np-masthead span {
@@ -1578,7 +1578,7 @@ h1.ht .fl {
   margin-right: 8px;
   margin-top: 4px;
   color: #8b0000;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .np-hero-foot {
@@ -1659,7 +1659,7 @@ h1.ht .fl {
 }
 
 .np-social-bar h4 {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1781,7 +1781,7 @@ footer {
 }
 
 .ftlg {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 20px;
   font-weight: 900;
   color: #ffffff;
@@ -1972,7 +1972,7 @@ footer p {
 }
 
 .locc h4 {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 24px;
   font-weight: 800;
   color: var(--text-main);
@@ -2092,7 +2092,7 @@ footer p {
   font-weight: 800;
   margin-bottom: 10px;
   color: #0F172A;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .adt {
@@ -3234,24 +3234,54 @@ textarea:focus {
   animation-delay: 0.15s;
 }
 
+/* Enhanced Word Reveal Animation */
+.an-wrd {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px) skewY(2deg);
+  filter: blur(4px);
+  animation: wrdReveal 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes wrdReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0) skewY(0deg);
+    filter: blur(0);
+  }
+}
+
+/* Cascade for header blocks */
+h1.ht .fl .an-wrd { animation-delay: 0.3s; }
+h1.ht .it .an-wrd:nth-child(1) { animation-delay: 0.4s; }
+h1.ht .it .an-wrd:nth-child(2) { animation-delay: 0.45s; }
+h1.ht .sm .an-wrd:nth-child(1) { animation-delay: 0.55s; }
+h1.ht .sm .an-wrd:nth-child(2) { animation-delay: 0.6s; }
+h1.ht .sm .an-wrd:nth-child(3) { animation-delay: 0.65s; }
+
+/* Cascade for paragraph description words */
+.hsub .an-wrd:nth-child(1) { animation-delay: 0.8s; }
+.hsub .an-wrd:nth-child(2) { animation-delay: 0.85s; }
+.hsub .an-wrd:nth-child(3) { animation-delay: 0.9s; }
+.hsub .an-wrd:nth-child(4) { animation-delay: 0.95s; }
+.hsub .an-wrd:nth-child(5) { animation-delay: 1s; }
+.hsub .an-wrd:nth-child(6) { animation-delay: 1.05s; }
+.hsub .an-wrd:nth-child(7) { animation-delay: 1.1s; }
+.hsub .an-wrd:nth-child(8) { animation-delay: 1.15s; }
+.hsub .an-wrd:nth-child(n+9) { animation-delay: 1.2s; } /* Cover remainder safely */
+
 h1.ht .fl {
   display: inline-block;
-  animation: hpFadeInUp 0.85s var(--e) both;
-  animation-delay: 0.25s;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 h1.ht .it {
   display: inline-block;
-  animation: hpFadeInUp 0.85s var(--e) both;
-  animation-delay: 0.4s;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 h1.ht .sm {
   display: inline-block;
-  animation: hpFadeInUp 0.85s var(--e) both;
-  animation-delay: 0.55s;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -3269,11 +3299,12 @@ h1.ht .sm:hover {
 .hsub {
   animation: hpFadeInUp 0.85s var(--e) both;
   animation-delay: 0.7s;
+  /* Keeping static for safety container logic, but children animate */
 }
 
 .hbtns {
   animation: hpFadeInUp 0.85s var(--e) both;
-  animation-delay: 0.85s;
+  animation-delay: 1.3s; /* Pushed slightly back to let description finish animating */
 }
 
 .hstats {
