@@ -16,8 +16,8 @@ const Why = () => {
         </div>
         <div className="wlist rv">
           <div className="tag">Why Choose Me?</div>
-          <h2 class="ttl">Direct <em>Dealings</em>, Zero Hassle</h2>
-          <p class="dsc" style={{marginBottom: '30px'}}>I work differently. I am not a broker; I am your personal land consultant in Trichy.</p>
+          <h2 className="ttl">Direct <em>Dealings</em>, Zero Hassle</h2>
+          <p className="dsc" style={{marginBottom: '30px'}}>I work differently. I am not a broker; I am your personal land consultant in Trichy.</p>
           
           <div className="why-items-grid">
             <div className="witem rv">

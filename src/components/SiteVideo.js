@@ -16,7 +16,7 @@ const SiteVideo = () => {
   };
 
   return (
-    <section id="site-video" className="rv">
+    <section id="site-video">
       <div className="video-container">
         <span className="tag">EXCLUSIVE TOUR</span>
         <h2 className="ttl">Drone Walkthrough & <em>Advertisement</em></h2>
